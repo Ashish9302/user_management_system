@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('image/photo-1449034446853-66c86144b0ad.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 15px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 38px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease,height .2s ease;
+    overflow: hidden;
+}
+.wrapper.active{
+  height: 500px;
+}
+.wrapper .ragister-box{
+  position:absolute;
+  transform: translateX(400px);
+  transition: transform .5s ease,height .2s ease;
+}
+.wrapper .ragister-box.active1{
+  transform: translateX(0);
+}
+.wrapper .login-box{
+  position:absolute;
+  transform: translateX(0);
+  transition: transform .5s ease,height .2s ease;
+}
+.wrapper .login-box.active2{
+  transform: translateX(-400px);
+}
+.wrapper .login-box.active3{
+  transform: translateX(400px);
+}
+.wrapper .forgot-box{
+  position:absolute;
+  transform: translateX(-400px);
+  transition: transform .5s ease,height .2s ease;
+}
+.wrapper .forgot-box.active4{
+  position:absolute;
+  transform: translateX(0);
+}
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background: #162938;
+    font-size: 1.6em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.wrapper .form-box{
+    width:100%;
+    padding: 40px;
+}
+.form-box h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #000000;
+    margin:30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width:100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.6em;
+    color: black;
+    line-height: 62px;   
+}
+.remenber-forgot{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remenber-forgot label input{
+    margin-right: 3px;
+    accent-color: #162938;
+}
+.remenber-forgot a{
+    color: #162938;
+    text-decoration: none;
+}
+.remenber-forgot a:hover{
+    text-decoration: underline;
+}
+.ragister{
+  font-size: 1em;
+  color: #162938;
+  font-weight: 500;
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+.ragister a{
+  font-size: 1.03em;
+  color: #162938;
+  text-decoration: none;
+  font-weight: 600;
+}
+.ragister a:hover{
+  text-decoration: underline;
+}
+.btn-submit{
+    width: 100%;
+    height: 45px;
+    background-color: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+      
+  .menu-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    text-decoration: none;
+    transition: all 0.4s;
+  }
+  
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #162938;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 180px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 180px;
+    top: 0;
+    background-color: #162938;
+    color: rgb(255, 34, 34);
+  }
+
+  
